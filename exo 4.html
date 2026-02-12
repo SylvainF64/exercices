@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 4: Formulaires</title>
+</head>
+
+
+<body>
+    <form action="submit.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+
+
+        <label for="select">Choix:</label>
+        <select name="select" id="select">
+            <option value="">choisir une option</option>
+            <option value="choix1">Choix n°1</option>
+            <option value="choix2">Choix n°2</option>
+            <option value="choix3">Choix n°3</option>
+        </select>
+
+        <fieldset>
+
+            <legend>
+                Préférences:
+            </legend>
+
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter" />
+                <label for="newsletter">Recevoir la newsletter</label>
+            </div>
+
+            <div>
+                <input type="radio" name="optiona" id="optiona">
+                <label for="optiona">Option A</label>
+            </div>
+
+            <div>
+                <input type="radio" name="optionb" id="optionb">
+                <label for="optionb">Option B</label>
+            </div>
+
+        </fieldset>
+        <input type="submit" value="Envoyer">
+    </form>
+
+</body>
+
+</html>

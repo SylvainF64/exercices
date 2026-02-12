@@ -1,0 +1,28 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+main{
+    display: grid;
+    grid-template-columns: 125px 1fr;
+}
+
+footer{
+    margin-left: 100px;
+    position: fixed;
+    bottom: 0;
+}
